@@ -1,0 +1,48 @@
+body{
+    width: 1024px;
+    margin: auto;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+}
+.rotate {
+-webkit-transform: rotate(70deg);
+-moz-transform: rotate(70deg);
+-ms-transform: rotate(70deg);
+-o-transform: rotate(70deg);
+transform: rotate(70deg);
+/*background-color: #ff791d;*/
+    background-image: url(http://vignette2.wikia.nocookie.net/minecraftpocketedition/images/3/30/Gear-md.png/revision/latest?cb=20150708201408);
+background-size: cover;
+    text-align: center;
+}
+
+
+.skew {
+    -webkit-transform: skew(20deg, 20deg);
+    -moz-transform: skew(20deg, 20deg);
+    -ms-transform: skew(20deg, 20deg);
+    -o-transform: skew(20deg, 20deg);
+    transform: skew(20deg, 20deg);
+    background-color: #308bff;
+}
+
+.translate {
+    -webkit-transform: translate(500px, 100px);
+    -moz-transform: translate(500px, 100px);
+    -ms-transform: translate(500px, 100px);
+    -o-transform: translate(500px, 100px);
+    transform: translate(500px, 100px);
+    background-color: #ff1a10;
+}
+
+.scale {
+    -webkit-transform: scale(1.25,2);
+    -moz-transform: scale(1.25,2);
+    -ms-transform: scale(1.25,2);
+    -o-transform: scale(1.25,2);
+    transform: scale(1.25,2);
+    background-color: #1bff44;
+}
