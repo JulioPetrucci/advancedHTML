@@ -1,0 +1,40 @@
+@-webkit-keyframes myAnimation {
+    0%{
+        background-color: #ff9a39;
+        left: 0px;
+    }
+
+    25%{
+        background-color: #9bff33;
+        top: 80%;
+}
+
+    50%{
+        background-color: #2effd1;
+        left: 80%;
+}
+
+    75%{
+        top: 0%;
+
+    }
+
+    100%{
+        left: 0;
+    }
+
+}
+
+
+
+.anima {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+text-align: center;
+    background-color: #ff9a39;
+    -webkit-animation: myAnimation 2s;
+    -moz-animation: myAnimation 2s;
+    -o-animation: myAnimation 2s;
+    animation: myAnimation 2s;
+}
