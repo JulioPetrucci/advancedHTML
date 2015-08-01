@@ -1,40 +1,51 @@
 @-webkit-keyframes myAnimation {
-    0%{
-        background-color: #ff9a39;
-        left: 0px;
-    }
 
-    25%{
-        background-color: #9bff33;
-        top: 80%;
-}
-
-    50%{
-        background-color: #2effd1;
-        left: 80%;
-}
-
-    75%{
-        top: 0%;
-
-    }
-
-    100%{
+    0% {
+        top: 0;
         left: 0;
     }
 
+    25% {
+        background-color: aqua;
+        width: 450px;
+        height: 450px;
+        -webkit-transform: rotate(360deg);
+        top: 0;
+        left: 500px;
+    }
+
+    50% {
+        top: 500px;
+        left: 500px;
+    }
+
+    75% {
+        background-color: crimson;
+        width: 150px;
+        height: 150px;
+        -webkit-transform: rotate(-360deg);
+        top: 500px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
 
 
-
 .anima {
-    position: absolute;
+
     width: 300px;
     height: 300px;
-text-align: center;
-    background-color: #ff9a39;
-    -webkit-animation: myAnimation 2s;
-    -moz-animation: myAnimation 2s;
-    -o-animation: myAnimation 2s;
-    animation: myAnimation 2s;
+    position: absolute;
+
+    background-color: steelblue;
+
+    -webkit-animation: myAnimation 2s infinite;
+    -moz-animation: myAnimation 2s infinite;
+    -o-animation: myAnimation 2s infinite;
+    animation: myAnimation 2s infinite;
+
 }
