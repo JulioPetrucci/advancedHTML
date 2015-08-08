@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../development.css"/>
+</head>
+<body>
+
+<div class="container">
+	<form action="" class="col-md-6">
+		<div class="form-group form-group-lg has-success">
+            <label for="input" class="control-label">Input</label>
+			<input type="text" class="form-control control-label input-lg" id="input"/>
+		</div>
+		<div class="form-group has-success">
+            <label for="select" class="control-label">Select</label>
+			<select name="" id="select" class="form-control">
+			<option value="opt-1">Option 1</option>
+			<option value="opt-2">Option 2</option>
+			<option value="opt-3">Option 3</option>
+			<option value="opt-4">Option 4</option>
+			<option value="opt-5">Option 5</option>
+			<option value="opt-6">Option 6</option>
+			<option value="opt-7">Option 7</option>
+		</select>
+            <span class="help-block">My text.............</span>
+		</div>
+		<div class="form-group">
+            <label for="text-area">Text Area</label>
+			<textarea name="" id="text-area" cols="30" rows="10" class="form-control"></textarea>
+
+            <div class="formgroup">
+
+                <label for="amount">amount</label>
+
+                <div class="input-group">
+
+                    <div class="input-group-addon">$</div>
+
+                    <input type="text" class="form-control" id="amount"/>
+
+                    <div class="input-group-addon">.00</div>
+
+                </div>
+
+            </div>
+
+            <div class="formgroup">
+
+                <label for="cpf">CPF</label>
+
+                <div class="input-group">
+
+                    <input type="text" class="form-control text-center" id="cpf" maxlength="3"/>
+
+                    <div class="input-group-addon">.</div>
+
+                    <input type="text" class="form-control text-center" id="cpf" maxlength="3"/>
+
+                    <div class="input-group-addon">.</div>
+                    <input type="text" class="form-control text-center" id="cpf" maxlength="3"/>
+
+                    <div class="input-group-addon">-</div>
+
+                    <input type="text" class="form-control text-center" id="cpf" maxlength="2"/>
+
+
+                </div>
+
+            </div>
+
+
+
+		</div>
+		<button class="btn btn-default" type="submit">Submit</button>
+	</form>
+</div>
+
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
