@@ -1,0 +1,101 @@
+/*.transform(@prop){
+  -webkit-transform: @prop;
+  -moz-transform: @prop;
+  -ms-transform: @prop;
+  -o-transform: @prop;
+  transform: @prop;
+}
+
+.transition-mix(@prop){
+  webkit-transition: ~'@{prop}';
+  -moz-transition: ~'@{prop}';
+  -ms-transition: ~'@{prop}';
+  -o-transition: ~'@{prop}';
+  transition: ~'@{prop}';
+}
+
+
+  .transform(rotate(30deg));
+
+  .transition-mix('width 2s,height 2s,background-color 2s,opacity 2.5s');
+}
+
+.transition:hover{
+
+  width: 600px;
+  height: 600px;
+  background-color: #ff791d;
+  opacity: 0.3;
+
+  .transform(rotate(360deg))
+
+}
+
+*/
+
+.get-prefix(@property; @value){
+
+  -webkit-@{property}: @value;
+  -moz-@{property}: @value;
+  -ms-@{property}: @value;
+  -o-@{property}: @value;
+  @{property}: @value;
+
+}
+
+.get-prefix(@property; @value; @specific){
+
+  -webkit-@{property}: @value ~'-webkit-@{specific}';
+  -moz-@{property}: @value ~'-moz-@{specific}';
+  -ms-@{property}: @value ~'-ms-@{specific}';
+  -o-@{property}: @value ~'-o-@{specific}';
+  @{property}: @value ~'@{specific}';
+
+}
+
+.transition {
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+
+  .get-prefix(transition;width 2s, height 2s, background-color 2s; transform 2s)
+}
+
+/*.transition {
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+
+  -webkit-transition: width 2s,
+                      height 2s,
+                      background-color 2s,
+                      -webkit-transform 2s;
+
+  -moz-transition:    width 2s,
+                      height 2s,
+                      background-color 2s,
+                      -moz-transform 2s;
+  -ms-transition:     width 2s,
+                      height 2s,
+                      background-color 2s,
+                      -ms-transform 2s;
+
+  -o-transition:      width 2s,
+                      height 2s,
+                      background-color 2s,
+                      -o-transform 2s;
+
+  transition:         width 2s,
+                      height 2s,
+                      background-color 2s,
+                      transform 2s;
+
+}*/
+
+.transition:hover {
+  width: 600px;
+  height: 600px;
+  background-color: #6c0adb;
+
+  .get-prefix(transform; rotate(3600deg));
+}

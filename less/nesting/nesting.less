@@ -1,0 +1,87 @@
+//@bgc: #b5bdc4;
+//
+//
+//*{
+//  text-align: center;
+//}
+//
+//.container {
+//  padding: 20px;
+//  float: left;
+//  background-color: @bgc;
+//  margin: 30px;
+//}
+//
+//.product, img{
+//  display: block;
+//  font-size: 40px;
+//
+//}
+//
+//.price{
+//font-size: 20px;
+//  color: green;
+//
+//}
+
+// LAYOUT
+.container {
+  width: 1366px;
+  margin: 0 auto;
+
+  .product {
+    width: 350px;
+    height: 450px;
+    margin: 30px 20px;
+    float: left;
+
+    .price {
+      display: block;
+      padding: 10px 0;
+      margin-top: 30px;
+    }
+  }
+}
+
+// THEME
+.container {
+  .product {
+    opacity: 0.4;
+
+    background-color: #fff;
+      &:hover{
+        opacity: 1;
+        font-size: 20px;
+        background-color: gold;
+      }
+    .price {
+      background-color: darkgoldenrod;
+      color: white;
+    }
+  }
+}
+
+// TYPOGRAPHY
+.container {
+  .product {
+    text-align: center;
+    background-color: gold;
+
+    .price {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+}
+
+
+*{
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+//
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>& = seletor anterior inteiro<<<<<<<<<<<<<<<<

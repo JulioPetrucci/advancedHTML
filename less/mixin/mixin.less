@@ -1,0 +1,30 @@
+.gap(@margin;@color;@color2;@padding:5px){
+  margin: @margin;
+  padding: @padding;
+  background-color: @color;
+  color: @color2;
+}
+
+.item-1{
+  .gap(10px;gray;black;100px);
+  .font(40px);
+}
+
+.item-2{
+  .gap(20px;black;white);
+  .font();
+}
+
+.item-3{
+  .gap(30px;white;black);
+  .font();
+}
+
+.font(@size:20px){
+  font-family: Arial,"Helvetica Neue",sans-serif;
+  font-size: @size;
+}
+
+
+//obrigatorio primeiro (@var)
+//@var:defoutOpx

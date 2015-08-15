@@ -1,0 +1,14 @@
+@color: red;
+
+div{
+  margin: 10px;
+  width: 300em;
+  height: 200px;
+  background-color: @color;
+
+  &:last-of-type{
+    @color :blue;
+    background-color: @color;
+  }
+}
+

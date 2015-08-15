@@ -1,0 +1,40 @@
+@blue : #2868ff;
+@red : #ff3c2d;
+@green : #68ff4c;
+@width100 : 100%;
+
+@gap: 10px;
+@margin: @padding - 10px;
+@padding: @gap+10px;
+
+
+
+html, body{
+  width: @width100;
+  height: @width100;
+}
+
+.item{
+  float: left;
+  width: @width100/4;
+  height: @width100/1.5;
+  margin-left: @gap;
+  padding: @padding;
+}
+
+.blue{
+  background-color: @blue;
+}
+
+.red{
+  background-color: @red;
+}
+
+.green{
+  background-color: @green;
+}
+
+p{
+  font-size: @gap*1.5;
+  color: white;
+}

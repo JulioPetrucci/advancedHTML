@@ -1,0 +1,12 @@
+@path: 'http://lorempixel.com';
+@size: '1000';
+@category: 'cats';
+@url: '@{path}/@{size}/@{size}/@{category}';
+
+.item{
+  width: ~'@{size}px';
+  height: ~'@{size}px';
+  background: #ccc url(@url);
+}
+// interpolacao = @{path} = ler interpreta
+// ~ = tira as aspas/ trasnforma  em numero
