@@ -1,0 +1,25 @@
+.get-selector(@index) when (@index > 0){
+
+  .get-selector(@index - 1);
+
+  .item-@{index}{
+    background-image: url('http://lorempixel.com/220/220/nature/@{index}');
+  };
+}
+
+
+div[class*='item']{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+}
+
+div[class*='item']:hover{
+  width: 420px;
+  height: 420px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.get-selector(10);

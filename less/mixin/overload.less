@@ -1,0 +1,20 @@
+.gap(@value){
+  margin: @value;
+  padding: @value/2;
+}
+
+.gap(@margin; @padding){
+  margin: @margin;
+  padding: @padding;
+}
+
+.item-1{
+  .gap(10px);
+  background-color: #335afa;
+}
+.item-2{
+  .gap(50px;25px);
+  background-color: #d98213;
+}
+
+// gera sobre caraca quando um mixin tem uma copia com um numeros de variaves diferentes

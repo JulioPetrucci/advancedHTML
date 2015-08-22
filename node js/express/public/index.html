@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<h1>Home</h1>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<script>
+    var xhr =  new XMLHttpRequest();
+
+    xhr.open('GET','http://127.0.0.1:8080/service/cep/123', true);
+
+    xhr.onload = function(){
+                console.log(xhr.responseText)
+            };
+
+    xhr.onerror = function(error){
+        console.dir(error)
+    };
+
+    xhr.send()
+</script>
+</body>
+</html>
